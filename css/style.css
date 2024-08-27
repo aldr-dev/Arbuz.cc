@@ -1,0 +1,433 @@
+@import '../node_modules/hamburgers/dist/hamburgers.min.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--white-color);
+  position: relative;
+  z-index: 1;
+  background-color: var(--background-page-color);
+  margin: 0;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/landing-bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.01;
+  z-index: -9999;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1405px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::before,
+.hamburger .hamburger-inner::after {
+  background-color: var(--white-color) !important;
+}
+
+.hamburger.is-active:hover, .hamburger:hover {
+  opacity: 1;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 0 15px 0;
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-main-nav-inner {
+  width: 100%;
+}
+
+.main-nav-list {
+  margin-bottom: 18px;
+}
+
+.main-nav-list:first-child {
+  margin-top: 15px;
+}
+
+.main-nav-list:last-child {
+  margin-bottom: 30px;
+}
+
+.main-nav-link {
+  width: 100%;
+  font-size: 20px;
+  color: var(--white-color);
+  transition: .3s ease-in-out;
+}
+
+.main-nav-link.active {
+  color: var(--accent-color);
+}
+
+.hamburger {
+  display: block;
+}
+
+.header-main-nav-inner {
+  display: none;
+}
+.hamburger.is-active + .header-main-nav-inner {
+  display: block;
+}
+
+.header-button-authme {
+  border-radius: 32px;
+  padding: 8px 16px;
+  box-shadow: 0 0 4px 0 var(--additional-accent-color);
+  background: var(--additional-accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white-color);
+}
+
+.main-block-bg {
+  background: url('../images/main-background-forest.png') no-repeat top left;
+}
+
+.main-block-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-block-inner {
+  display: flex;
+}
+
+.main-block-headline {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.main-block-headline-focus {
+  color: var(--accent-color);
+}
+
+.main-block-desc {
+  color: var(--grey-color);
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.main-block-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.main-block-authme, .main-block-discord {
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  line-height: 150%;
+  color: var(--white-color);
+  border-radius: 32px;
+  padding: 8px 16px;
+}
+
+.main-block-authme {
+  background: var(--additional-accent-color);
+}
+
+.main-block-discord {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+}
+
+.about-tariff {
+  background: url('../images/tarif-ellipse-01.png') no-repeat left -45px / contain,
+  url('../images/tarif-ellipse-02.png') no-repeat right 70px / contain;
+  padding: 80px 0;
+}
+
+.about-tariff-scroll {
+  display: none;
+}
+
+.about-tariff-section-headline {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 91%;
+  margin-bottom: 40px;
+  background: url(../icons/ic-money.png) no-repeat 200px / contain;
+}
+
+.about-tariff-section-desc {
+  margin-bottom: 80px;
+}
+
+.about-tariff-section-desc-subtitle {
+  color: var(--grey-color);
+}
+
+.about-tariff-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-tariff-card {
+  width: 259px;
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(79.5px);
+  background: linear-gradient(90deg, rgba(27, 29, 36, 0.2) 0%, rgba(27, 29, 36, 0.2) 100%);
+}
+
+.about-tariff-card-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 28px;
+}
+
+.about-tariff-card-period {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 67%;
+  margin-bottom: 15px;
+  text-wrap: nowrap;
+}
+
+.about-tariff-card-price {
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--green-color);
+}
+
+.about-tariff-card-old-price {
+  font-size: 11px;
+  line-height: 145%;
+  text-decoration: line-through;
+  opacity: 0.2;
+  color: var(--white-color);
+}
+
+.advantage-section-step-one, .advantage-section-step-two, .advantage-section-step-three {
+  margin-bottom: 80px;
+}
+
+.advantage-step-headline {
+  font-weight: 600;
+  font-size: 30px;
+  padding-left: 60px;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+
+.advantage-step-headline.ic-diamond {
+  background: url('../icons/ic-diamond.svg') no-repeat left center / 50px 50px;
+}
+
+.advantage-step-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.advantage-step-headline.keyboard {
+  background: url('../icons/ic-keyboard.svg') no-repeat left center / 50px 50px;
+}
+
+.advantage-section-step-two-box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.advantage-step-headline.update {
+  background: url('../icons/ic-clock.svg') no-repeat left center / 50px 50px;
+}
+
+.advantage-section {
+  margin-bottom: 100px;
+}
+
+.about-brand-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+
+.about-brand-card {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(79.5px);
+}
+
+.about-brand-card-headline {
+  text-align: right;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 91%;
+  color: var(--accent-color);
+}
+
+.about-brand-card-desc {
+  font-size: 20px;
+  color: var(--grey-color);
+}
+
+.about-brand-card.update {
+  background: linear-gradient(90deg, rgba(27, 29, 36, 0.2) 0%, rgba(27, 29, 36, 0.2) 100%), url('../icons/ic-pen.svg') no-repeat left 30px top 30px / 35px 35px;
+}
+
+.about-brand-card.market {
+  background: linear-gradient(90deg, rgba(27, 29, 36, 0.2) 0%, rgba(27, 29, 36, 0.2) 100%), url('../icons/ic-clock.svg') no-repeat left 30px top 30px / 35px 35px;
+}
+
+.about-brand-card.person {
+  background: linear-gradient(90deg, rgba(27, 29, 36, 0.2) 0%, rgba(27, 29, 36, 0.2) 100%), url('../icons/ic-men.svg') no-repeat left 30px top 30px / 35px 35px;
+}
+
+.сlient-demo {
+  padding: 100px 0 50px 0;
+  background: url(../images/video-ellipse-01.png) no-repeat left top -110px / contain,
+  url(../images/video-ellipse-02.png) no-repeat right bottom / contain;
+}
+
+.сlient-demo-info-headline {
+  font-size: 28px;
+  line-height: 1.3;
+  background: url('../icons/ic-pc.png') no-repeat left center / 40px 40px;
+  margin-bottom: 30px;
+  padding-left: 55px;
+}
+
+.сlient-demo-info {
+  margin-bottom: 55px;
+}
+
+.сlient-demo-info-desc {
+  opacity: .7;
+}
+
+.сlient-dem-video {
+  width: 100%;
+  border-radius: 10px;
+  height: 50vw;
+}
+
+.footer {
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+  padding: 20px 0 27px 0;
+}
+
+.footer-logo-brand-image {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.footer-logo-brand-copyright {
+  display: block;
+  font-size: 20px;
+  color: var(--grey-color);
+  opacity: 0.5;
+  margin-bottom: 18px;
+}
+
+.footer-media {
+  margin-bottom: 35px;
+}
+
+.footer-list {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  font-size: 15px;
+  color: var(--grey-color);
+  transition: .3s ease-in-out;
+}
+
+.footer-title {
+  display: inline-block;
+  font-size: 25px;
+  color: var(--grey-color);
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.footer-watermark-design {
+  display: block;
+  font-size: 13px;
+  color: var(--grey-color);
+  opacity: 0.2;
+  margin-bottom: 28px;
+}
+
+.footer-watermark-design-link {
+  text-decoration: underline;
+}
