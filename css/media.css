@@ -37,6 +37,10 @@
   .about-tariff-card-list {
     justify-content: normal;
   }
+
+.form-authorization {
+  max-width: 614px;
+}
 }
 
 @media screen and (min-width: 900px) {
@@ -104,6 +108,18 @@
 
   .footer-media-and-navigate {
     justify-content: end;
+  }
+
+  .form-authorization {
+    padding: 24px;
+  }
+
+  .form-authorization-headline {
+    font-size: 24px;
+  }
+
+  .form-authorization-logo-brand {
+    margin-bottom: 28px;
   }
 }
 

@@ -60,6 +60,12 @@ p {
   margin: 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   max-width: 1405px;
   margin: 0 auto;
@@ -382,6 +388,7 @@ p {
   backdrop-filter: blur(79.5px);
   background: rgba(27, 29, 36, 0.2);
   padding: 20px 0 27px 0;
+  margin-top: auto;
 }
 
 .footer-logo-brand-image {
@@ -430,4 +437,111 @@ p {
 
 .footer-watermark-design-link {
   text-decoration: underline;
+}
+
+.authorization {
+  background: url('../images/main-background-forest.png') no-repeat center top;
+  min-height: calc(100vh - 73px);
+}
+
+.form-group-authorization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-authorization {
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 10px;
+  width: 100%;
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+}
+
+.form-authorization-logo-brand {
+  margin: 0 auto 10px;
+}
+
+.form-authorization-headline {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 133%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-authorization-row {
+  margin-bottom: 20px;
+}
+
+.form-authorization-field {
+  border-radius: 32px;;
+  height: 40px;
+  font-weight: 500;
+  width: 100%;
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 150%;
+  opacity: 0.2;
+  background: #000;
+  border: 0;
+  padding: 0 10px;
+}
+
+.form-authorization-field:focus {
+  outline: 2px solid var(--additional-accent-color);
+}
+
+.form-authorization-recover {
+  display: block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 185%;
+  opacity: 0.3;
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+
+.h-captcha {
+  margin-bottom: 40px;
+}
+
+.form-authorization-button {
+  border-radius: 32px;
+  padding: 8px 16px;
+  background: var(--additional-accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white-color);
+  border: none;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+
+.form-authorization-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-authorization-register-text {
+  font-weight: 300;
+  font-size: 13px;
+  opacity: 0.3;
+  color: var(--white-color);
+}
+
+.form-authorization-register-link {
+  font-weight: 300;
+  font-size: 13px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #8c8c8c;
+}
+
+.form-authorization-row.password {
+  margin-bottom: 40px;
 }

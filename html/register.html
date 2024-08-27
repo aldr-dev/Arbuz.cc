@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arbuz</title>
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="../css/var.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html">
+          <img src="../images/logo-brand.svg" alt="Arbuz">
+        </a>
+
+        <button id="hamburger" class="hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+        </button>
+
+        <div class="header-main-nav-inner">
+          <nav class="header-main-nav">
+            <ul class="main-nav">
+              <li class="main-nav-list">
+                <a href="index.html#tariff" class="main-nav-link">Тарифы</a>
+              </li>
+              <li class="main-nav-list">
+                <a href="index.html#advantages" class="main-nav-link">Преимущества</a>
+              </li>
+              <li class="main-nav-list">
+                <a href="index.html#videoReview" class="main-nav-link">Видеообзор</a>
+              </li>
+              <li class="main-nav-list">
+                <a href="#" class="main-nav-link">Купить</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="auth.html" class="header-button-authme">Авторизация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="authorization">
+    <div class="container">
+      <div class="form-group-authorization">
+        <form class="form-authorization">
+          <img class="form-authorization-logo-brand" src="../images/logo-brand-auth.png" alt="Arbuz">
+          <h3 class="form-authorization-headline">Зарегистрируйте учетную запись</h3>
+
+          <div class="form-authorization-row">
+            <input class="form-authorization-field" type="email" required placeholder="Введите адрес электронной почты">
+          </div>
+          <div class="form-authorization-row">
+            <input class="form-authorization-field" type="text" required placeholder="Придумайте никнейм">
+          </div>
+          <div class="form-authorization-row password">
+            <input class="form-authorization-field"  type="password" required placeholder="Введите пароль">
+          </div>
+
+          <div class="h-captcha" data-sitekey="49f2294e-75c6-4784-a2da-7abafee2e65e"></div>
+          <button class="form-authorization-button" type="submit">Зарегестрироваться</button>
+          <div class="form-authorization-register">
+            <span class="form-authorization-register-text">Есть учетная запись?</span>
+            <a href="auth.html" class="form-authorization-register-link">Войти</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo-brand">
+        <a href="index.html" class="footer-logo-brand-image">
+          <img src="../images/logo-brand-footer.svg" alt="Arbuz">
+        </a>
+        <span class="footer-logo-brand-copyright">&copy; All rights reserved. <br>2023-2024</span>
+        <span class="footer-watermark-design">site designed by <span class="footer-watermark-design-link">cutthroatpublicenemy</span></span>
+      </div>
+
+
+      <div class="footer-media-and-navigate">
+        <div class="footer-media">
+          <span class="footer-title">Социальные сети</span>
+          <ul class="footer-menu">
+            <li class="footer-list">
+              <a href="#" class="footer-link">ВКонтакте</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Telegram</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">YouTube</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Discord</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-navigate">
+          <span class="footer-title">Навигация</span>
+          <ul class="footer-menu">
+            <li class="footer-list">
+              <a href="auth.html" class="footer-link">Авторизация</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Покупка</a>
+            </li>
+            <li class="footer-list">
+              <a href="index.html#tariff" class="footer-link">Преимущества</a>
+            </li>
+            <li class="footer-list">
+              <a href="index.html#videoReview" class="footer-link">Видеообзор</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Пользовательское соглашение</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="https://hcaptcha.com/1/api.js" async defer></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="../js/style.js"></script>
+</body>
+</html>
