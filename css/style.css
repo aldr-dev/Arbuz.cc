@@ -461,7 +461,11 @@ p {
   background: rgba(27, 29, 36, 0.2);
 }
 
-.form-authorization-logo-brand {
+.form-authorization-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
   margin: 0 auto 10px;
 }
 
@@ -488,7 +492,7 @@ p {
   opacity: 0.2;
   background: #000;
   border: 0;
-  padding: 0 10px;
+  padding: 8px 16px;
 }
 
 .form-authorization-field:focus {
