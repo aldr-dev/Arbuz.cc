@@ -30,17 +30,57 @@
     column-gap: 35px;
     flex-wrap: wrap;
   }
+
+  .personal-account-setting-form {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .personal-account-setting-field {
+    width: 190px;
+  }
+
+  .personal-account-license-promo-code-field {
+    width: 229px;
+    margin-top: 0;
+  }
+
+  .personal-account-license-promo-code {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .personal-account-content-headline.referral-system {
+    font-size: 24px;
+  }
 }
 
+@media screen and (min-width: 650px) {
+  .about-tariff-card {
+    width: 259px;
+    display: block;
+  }
+
+  .form-authorization {
+    max-width: 614px;
+  }
+
+  .personal-account-license-ends {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .personal-account-content-headline.license {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 865px) {
   .about-tariff-card-list {
     justify-content: normal;
   }
-
-.form-authorization {
-  max-width: 614px;
-}
 }
 
 @media screen and (min-width: 900px) {
@@ -120,6 +160,23 @@
 
   .form-authorization-logo {
     margin-bottom: 28px;
+  }
+
+  .personal-account-content, .personal-account-aside {
+    padding: 24px;
+  }
+
+  .personal-account-inner {
+    margin: 133px auto 75px;
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+  }
+
+  .personal-account-aside {
+    min-height: 300px;
+    width: 370px;
+    flex-shrink: 0;
   }
 }
 
@@ -297,7 +354,7 @@
   }
 
   .advantage-section {
-    margin-bottom: 315px;
+    margin-bottom: 235px;
     padding-top: 100px;
   }
 
@@ -315,11 +372,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 26px;
   }
 
   .сlient-demo {
-    padding: 80px 0 89px 0;
+    padding: 100px 0 89px 0;
   }
 
   .сlient-demo-info-headline {
@@ -358,6 +415,22 @@
   .footer-title {
     margin-bottom: 0;
   }
+
+  .form-authorization-logo {
+    margin-bottom: 40px;
+  }
+
+  .form-authorization-headline {
+    margin-bottom: 40px;
+  }
+
+  .personal-account-inner {
+    gap: 64px;
+  }
+
+  .personal-account-aside {
+    width: 424px;
+  }
 }
 
 @media screen and (min-width: 1650px) {
@@ -387,5 +460,9 @@
 @media (hover: hover) and (pointer: fine) {
   .main-nav-link:hover, .footer-link:hover {
     color: var(--accent-color);
+  }
+
+  .personal-account-menu-link:hover {
+    background: var(--additional-accent-color);
   }
 }

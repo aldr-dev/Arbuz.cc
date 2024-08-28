@@ -243,7 +243,10 @@ p {
 }
 
 .about-tariff-card {
-  width: 259px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-radius: 15px;
   padding: 30px;
   backdrop-filter: blur(79.5px);
@@ -312,7 +315,7 @@ p {
 }
 
 .advantage-section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .about-brand-card-list {
@@ -381,7 +384,6 @@ p {
 .сlient-dem-video {
   width: 100%;
   border-radius: 10px;
-  height: 50vw;
 }
 
 .footer {
@@ -439,7 +441,7 @@ p {
   text-decoration: underline;
 }
 
-.authorization {
+.authorization, .personal-account {
   background: url('../images/main-background-forest.png') no-repeat center top;
   min-height: calc(100vh - 73px);
 }
@@ -459,6 +461,7 @@ p {
   width: 100%;
   backdrop-filter: blur(79.5px);
   background: rgba(27, 29, 36, 0.2);
+  min-height: 542px;
 }
 
 .form-authorization-logo {
@@ -478,7 +481,7 @@ p {
 }
 
 .form-authorization-row {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .form-authorization-field {
@@ -549,3 +552,257 @@ p {
 .form-authorization-row.password {
   margin-bottom: 40px;
 }
+
+.personal-account-inner {
+  margin: 50px auto 50px;
+}
+
+.personal-account-aside {
+  width: 100%;
+  border-radius: 15px;
+  padding: 20px 8px;
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+  margin-bottom: 64px;
+}
+
+.personal-account-menu-list {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.personal-account-menu-list:last-child {
+  margin-bottom: 0;
+}
+
+.personal-account-menu-link {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--white-color);
+  border-radius: 32px;
+  padding: 8px 24px;
+  transition: .3s ease-in-out;
+}
+
+.personal-account-menu-list:last-child .personal-account-menu-link {
+  color: var(--white-color);
+  opacity: 0.3;
+}
+
+.personal-account-menu-link.active {
+  background:  var(--additional-accent-color);
+}
+
+.personal-account-content {
+  border-radius: 15px;
+  padding: 20px 8px;
+  width: 100%;
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+}
+
+.personal-account-content-headline {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 16px;
+}
+
+.personal-account-content-avatar-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.personal-account-content-avatar-block {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.personal-account-content-avatar {
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+}
+
+.personal-account-content-avatar-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  height: 25px;
+  border: none;
+  width: 25px;
+  background: rgba(27, 29, 36, 0.2);
+  backdrop-filter: blur(79.5px);
+  cursor: pointer;
+}
+
+.personal-account-content-avatar-icon {
+  width: 14px;
+  height: 15px;
+}
+
+.personal-account-content-avatar-box {
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%), url('../images/personal-account-avatar.jpg') no-repeat left center / 100%;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.personal-account-content-inner {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+
+.personal-account-content-avatar-role {
+  display: block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.personal-account-content-avatar-role-id {
+  font-weight: 200;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.personal-account-content-avatar-user {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.personal-account-setting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.personal-account-setting-field, .personal-account-license-promo-code-field {
+  border-radius: 32px;;
+  height: 40px;
+  font-weight: 500;
+  width: 100%;
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 150%;
+  opacity: 0.2;
+  background: #000;
+  border: 0;
+  padding: 8px 16px;
+}
+
+.personal-account-setting-field:focus, .personal-account-license-promo-code-field:focus {
+  outline: 2px solid var(--additional-accent-color);
+}
+
+.personal-account-setting-button {
+  border: none;
+  padding: 10px 0;
+  background: transparent;
+  font-size: 16px;
+  color: var(--grey-color);
+  text-align: left;
+  cursor: pointer;
+}
+
+.personal-account-license-ends {
+  margin-bottom: 16px;
+}
+
+.personal-account-license-end-data {
+  font-weight: 500;
+  color: var(--grey-color);
+  opacity: 0.5;
+}
+
+.personal-account-license-date-format {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--grey-color);
+  opacity: 0.2;
+}
+
+.personal-account-license-promo-code {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.personal-account-license-promo-code-label {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.personal-account-license-promo-code-field {
+  margin-top: 15px;
+}
+
+.personal-account-license-promo-code-button {
+  text-indent: 210%;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  width: 33px;
+  height: 30px;
+  cursor: pointer;
+  background: url('../icons/ic-checked.png') no-repeat;
+}
+
+.personal-account-content-headline.referral-system {
+  font-size: 23px;
+}
+
+.personal-account-referral-system-promo,
+.personal-account-referral-system-used,
+.personal-account-referral-system-profit {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.personal-account-referral-system-promo-name,
+.personal-account-referral-system-used-count,
+.personal-account-referral-system-profit-sum {
+  display: inline-block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.personal-account-referral-system-profit-sum {
+  color: var(--green-color);
+}
+
+.personal-account-content-exit {
+  border-radius: 32px;
+  padding: 8px 16px 8px 56px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white-color);
+  background: var(--backgoround-button-color-red) url('../icons/ic-exit.png') no-repeat left 16px center;
+  height: 40px;
+}
+
+.personal-account-button-exit {
+  text-align: end;
+}
+
+
+
+
