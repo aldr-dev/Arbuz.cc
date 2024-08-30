@@ -881,6 +881,7 @@ p {
   font-size: 16px;
   color: var(--white-color);
   cursor: pointer;
+  height: 40px;
 }
 
 .personal-account-content-shop-table {
@@ -906,4 +907,43 @@ td {
 th, td {
   padding: 16px 15px;
   text-wrap: nowrap;
+}
+
+.personal-account-content-download-client-button {
+  border-radius: 32px;
+  padding: 8px 16px;
+  background: var(--additional-accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 32px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+.personal-account-content-download-client-update,
+.personal-account-content-download-client-number {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.personal-account-content-download-client-date,
+.personal-account-content-download-client-count {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.personal-account-content-download-client-video {
+  border-radius: 10px;
+  width: 100%
+}
+
+.personal-account-content-headline.download-client {
+  font-size: 21px;
 }
