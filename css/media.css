@@ -43,6 +43,7 @@
   .personal-account-license-promo-code-field {
     width: 229px;
     margin-top: 0;
+    margin-left: 16px;
   }
 
   .personal-account-license-promo-code {
@@ -177,6 +178,20 @@
     min-height: 300px;
     width: 370px;
     flex-shrink: 0;
+  }
+
+  .personal-account-content-shop {
+    padding: 24px;
+  }
+
+  .personal-account-product-card-checkbox:checked + .personal-account-product-card-label:before {
+    width: 30px;
+    height: 30px;
+    background: var(--additional-accent-color) url('../icons/ic-check.svg') no-repeat center center;
+  }
+
+  .personal-account-content-shop-table-inner {
+    padding: 24px;
   }
 }
 
@@ -430,6 +445,25 @@
 
   .personal-account-aside {
     width: 424px;
+  }
+
+  .personal-account-product-list {
+    flex-direction: row;
+  }
+
+  .personal-account-product-card-label {
+    width: 303px;
+  }
+
+  .personal-account-product-list {
+    row-gap: 38px;
+    column-gap: 28px;
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .personal-account-product-card-label {
+    width: 405px;
   }
 }
 

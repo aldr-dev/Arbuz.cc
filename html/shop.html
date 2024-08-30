@@ -55,14 +55,14 @@
   </header>
 
   <div class="personal-account">
-    <div class="container personal-account-inner">
+    <div class="container personal-account-inner shop">
       <aside class="personal-account-aside">
         <ul class="personal-account-menu">
           <li class="personal-account-menu-list">
-            <a href="#" class="personal-account-menu-link active">Мой аккаунт</a>
+            <a href="#" class="personal-account-menu-link">Мой аккаунт</a>
           </li>
           <li class="personal-account-menu-list">
-            <a href="#" class="personal-account-menu-link">Магазин</a>
+            <a href="#" class="personal-account-menu-link active">Магазин</a>
           </li>
           <li class="personal-account-menu-list">
             <a href="#" class="personal-account-menu-link">Скачать клиент</a>
@@ -76,67 +76,76 @@
         </ul>
       </aside>
 
-      <main class="personal-account-content">
-        <h5 class="personal-account-content-headline">Мой аккаунт</h5>
-
-        <div class="personal-account-content-inner">
-          <div class="personal-account-content-avatar-box">
-            <div class="personal-account-content-avatar-inner">
-              <div class="personal-account-content-avatar-block">
-                <button type="button" class="personal-account-content-avatar-upload">
-                  <svg class="personal-account-content-avatar-icon" viewBox="0 0 15 17" fill="none"
-                       xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.90192 2.47915L9.95443 4.60322C10.1266 4.78134 10.4056 4.78134 10.5777 4.60322C10.7499 4.42509 10.7499 4.1363 10.5777 3.95817L7.77283 1.05547C7.60071 0.877344 7.32164 0.877344 7.14952 1.05547L4.3446 3.95817C4.17248 4.1363 4.17248 4.42509 4.3446 4.60322C4.51673 4.78134 4.79579 4.78134 4.96792 4.60322L7.02042 2.47915L7.02042 10.5003H7.90192L7.90192 2.47915Z"
-                          fill="white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M5.39575 6.27709V5.36278H3.07742C1.6108 5.36278 0.421875 6.59083 0.421875 8.1057V13.5915C0.421875 15.1064 1.6108 16.3344 3.07742 16.3344H11.9292C13.3959 16.3344 14.5848 15.1064 14.5848 13.5915V8.1057C14.5848 6.59083 13.3959 5.36278 11.9292 5.36278H9.6952V6.27709H11.9292C12.907 6.27709 13.6996 7.09579 13.6996 8.1057V13.5915C13.6996 14.6014 12.907 15.4201 11.9292 15.4201H3.07742C2.09967 15.4201 1.30706 14.6014 1.30706 13.5915V8.1057C1.30706 7.09579 2.09967 6.27709 3.07742 6.27709H5.39575Z"
-                          fill="white"/>
-                  </svg>
-                </button>
-                <img class="personal-account-content-avatar" src="../images/personal-account-avatar.jpg" alt="avatar">
+      <main class="personal-account-content shop">
+        <div class="personal-account-content-shop">
+          <h5 class="personal-account-content-headline">Магазин</h5>
+          <div class="personal-account-product">
+            <div class="personal-account-product-list">
+              <div class="personal-account-product-card">
+                  <input class="personal-account-product-card-checkbox" name="option" value="1" id="product-30-days" type="radio">
+                  <label class="personal-account-product-card-label" for="product-30-days">
+                    <strong class="personal-account-product-card-headline">30 дней</strong>
+                    <span class="personal-account-product-card-price">299 &#8381; <span class="personal-account-product-card-old-price">599 &#8381;</span></span>
+                  </label>
               </div>
-              <div class="personal-account-content-avatar-info">
-                <span class="personal-account-content-avatar-role">designer <span
-                  class="personal-account-content-avatar-role-id">351</span></span>
-                <span class="personal-account-content-avatar-user">salam4ik</span>
+              <div class="personal-account-product-card">
+                <input class="personal-account-product-card-checkbox" name="option" value="2" id="product-1-year" type="radio">
+                <label class="personal-account-product-card-label" for="product-1-year">
+                  <strong class="personal-account-product-card-headline">1 год</strong>
+                  <span class="personal-account-product-card-price">499 &#8381; <span class="personal-account-product-card-old-price">2 099 &#8381;</span></span>
+                </label>
+              </div>
+              <div class="personal-account-product-card">
+                <input class="personal-account-product-card-checkbox" name="option" value="3" id="product-forever" type="radio">
+                <label class="personal-account-product-card-label" for="product-forever">
+                  <strong class="personal-account-product-card-headline">Навсегда</strong>
+                  <span class="personal-account-product-card-price">599 &#8381; <span class="personal-account-product-card-old-price">2 599 &#8381;</span></span>
+                </label>
+              </div>
+              <div class="personal-account-product-card">
+                <input class="personal-account-product-card-checkbox" name="option" value="4" id="product-reset-hwid" type="radio">
+                <label class="personal-account-product-card-label" for="product-reset-hwid">
+                  <strong class="personal-account-product-card-headline">Сброс HWID</strong>
+                  <span class="personal-account-product-card-price">149 &#8381; <span class="personal-account-product-card-old-price">299 &#8381;</span></span>
+                </label>
               </div>
             </div>
+            <button class="personal-account-product-payment" type="button">Оплатить</button>
           </div>
         </div>
 
-        <div class="personal-account-setting personal-account-content-inner">
-          <h5 class="personal-account-content-headline">Настройки аккаунта</h5>
-          <form class="personal-account-setting-form">
-            <input class="personal-account-setting-field" type="password" required placeholder="НВCI$I39(">
-            <button class="personal-account-setting-button" type="submit">Изменить пароль</button>
-          </form>
-        </div>
-
-        <div class="personal-account-license personal-account-content-inner">
-          <div class="personal-account-license-ends">
-            <h5 class="personal-account-content-headline license">Лицензия истекает</h5>
-            <span class="personal-account-license-end-data">10.08.2024 1:30 </span>
-            <span class="personal-account-license-date-format">+3 GTM</span>
+        <div class="personal-account-content-shop-table-inner">
+          <h5 class="personal-account-content-headline">История покупок</h5>
+          <div class="personal-account-content-shop-table">
+            <table>
+              <tr>
+                <th>Дата</th>
+                <th>Товар</th>
+                <th>Метод платежа</th>
+                <th>Цена</th>
+              </tr>
+              <tbody>
+              <tr>
+                <td>10/08/2024</td>
+                <td>Сброс HWID</td>
+                <td>Мир ****3452</td>
+                <td>149 &#8381;</td>
+              </tr>
+              <tr>
+                <td>21/06/2023</td>
+                <td>Лицензия - Навсегда</td>
+                <td>Юмани</td>
+                <td>599 &#8381;</td>
+              </tr>
+              <tr>
+                <td>12/02/2023</td>
+                <td>Лицензия - 30 дней</td>
+                <td>Visa ****3452</td>
+                <td>299 &#8381;</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
-          <form class="personal-account-license-promo-code">
-            <label class="personal-account-license-promo-code-label" for="promo-code">
-              Есть промокод?
-              <input id="promo-code" class="personal-account-license-promo-code-field" type="text" required placeholder="Введите ваш ключ">
-            </label>
-            <button class="personal-account-license-promo-code-button" type="submit">Отправить</button>
-          </form>
-        </div>
-
-        <div class="personal-account-referral-system personal-account-content-inner">
-          <h5 class="personal-account-content-headline referral-system">Реферальная система</h5>
-          <span class="personal-account-referral-system-promo">Ваш промокод <span class="personal-account-referral-system-promo-name">RELEASE</span></span>
-          <span class="personal-account-referral-system-used">Использований <span class="personal-account-referral-system-used-count">3</span></span>
-          <span class="personal-account-referral-system-profit">Прибыль <span class="personal-account-referral-system-profit-sum">1 275 &#8381;</span ></span>
-        </div>
-
-        <div class="personal-account-button-exit">
-          <button class="personal-account-content-exit" type="button">Выйти</button>
         </div>
       </main>
     </div>

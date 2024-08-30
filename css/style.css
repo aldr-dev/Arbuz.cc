@@ -803,6 +803,107 @@ p {
   text-align: end;
 }
 
+.personal-account-content.shop {
+  background: none;
+  backdrop-filter: none;
+  padding: 0;
+}
 
+.personal-account-content-shop, .personal-account-content-shop-table-inner {
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+  border-radius: 15px;
+  padding: 20px 8px;
+  margin-bottom: 39px;
+}
 
+.personal-account-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
 
+.personal-account-product-card-label {
+  position: relative;
+  backdrop-filter: blur(79.5px);
+  background: rgba(27, 29, 36, 0.2);
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.personal-account-product-card-headline {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.personal-account-product-card-price {
+  font-size: 16px;
+  color: var(--green-color);
+}
+
+.personal-account-product-card-old-price {
+  font-size: 11px;
+  text-decoration: line-through;
+  opacity: 0.2;
+  color: var(--white-color);
+}
+
+.personal-account-product-card-checkbox {
+  display: none;
+}
+
+.personal-account-product-card-checkbox:checked + .personal-account-product-card-label:before {
+  position: absolute;
+  content: '';
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  backdrop-filter: blur(79.5px);
+  background: var(--additional-accent-color) url('../icons/ic-check.svg') no-repeat center center / 15px 15px;
+}
+
+.personal-account-product-payment {
+  border: none;
+  border-radius: 32px;
+  padding: 8px 16px;
+  background: var(--additional-accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.personal-account-content-shop-table {
+  max-width: 800px;
+  overflow-x: auto;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+th, td {
+  padding: 16px 15px;
+  text-wrap: nowrap;
+}
