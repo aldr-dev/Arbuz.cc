@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 1000,
   });
 
-
   // Скролл по определенным секциям страницы
   let highlightedLink = null;
 

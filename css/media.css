@@ -80,6 +80,11 @@
   .personal-account-content-headline.license {
     margin-bottom: 0;
   }
+
+  .personal-account-content-admin-panel-active-key-field.key,
+  .personal-account-content-admin-panel-active-key-field.id {
+    width: 190px;
+  }
 }
 
 @media screen and (min-width: 865px) {
